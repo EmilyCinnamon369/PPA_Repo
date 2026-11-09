@@ -23,3 +23,6 @@ Product Owner / Frontend Developer: Taylor Stargell – Defines project requirem
 Visual Designer / GitHub Repository Manager: Emily Cinnamon – Owns the shared GitHub repository. 
 Scrum Master / UI: Jaylen Green – Manages project progress and designs wireframes and the user interface. 
 Database Developer / Backend: Holden Kravitz – Develops backend functionality and verifies CRUD persistence. Maintains the MySQL database.
+
+
+<img width="1143" height="246" alt="image" src="https://github.com/user-attachments/assets/0d9e6d22-7c86-4af6-86f2-07f6db847322" />
