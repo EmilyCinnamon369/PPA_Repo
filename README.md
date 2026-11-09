@@ -14,13 +14,21 @@ Pet shop staff members and store managers need to be able to view available pupp
 
 Planned Application Features 
 
-Functional Requirement #1 As a Staff User, I need to access the puppy directory, In order to view all the current puppy records stored in the PPA database. Given a staff user wants to review the Pet Planet Adoption puppy directory, When the staff or store manager opens /Puppies/list URL endpoint, Then the application retrieves puppy records and displays them in a table sorted by name.
+Functional Requirement #1 
 
-Functional Requirement #2 As a Staff User, I need to create a new puppy entry, In order to log a newly arrived puppy into the local MySQL database. Given a staff user wants to add a puppy to the system, When the staff or store manager opens the Add New Puppy form, inputs the puppy name, color, breed and gender, and selects Register, Then the application saves the record and redirects the user back to the list of puppies. 
+As a Staff User, I need to access the puppy directory, In order to view all the current puppy records stored in the PPA database. Given a staff user wants to review the Pet Planet Adoption puppy directory, When the staff or store manager opens /Puppies/list URL endpoint, Then the application retrieves puppy records and displays them in a table sorted by name.
 
-Functional Requirement #3 As a Staff User, I need to update an existing puppy record, In order to correct or revise the animal’s information on their profile. Given a puppy record already exists in the system database, When the store manager or staff clicks Update and edits the pre-populated form, Then the application saves the updated record and returns the staff user to the main puppy directory. 
+Functional Requirement #2 
 
-Functional Requirement #4 As a Staff User, I need to delete a puppy record, In order to remove a puppy after it has been adopted. Given a staff member or store manager clicks Delete for an existing puppy entry in the list, When the browser displays a deletion confirmation and the staff or shop manager confirms the action, Then the application removes the selected puppy from the database and reloads the active puppy directory.
+As a Staff User, I need to create a new puppy entry, In order to log a newly arrived puppy into the local MySQL database. Given a staff user wants to add a puppy to the system, When the staff or store manager opens the Add New Puppy form, inputs the puppy name, color, breed and gender, and selects Register, Then the application saves the record and redirects the user back to the list of puppies. 
+
+Functional Requirement #3 
+
+As a Staff User, I need to update an existing puppy record, In order to correct or revise the animal’s information on their profile. Given a puppy record already exists in the system database, When the store manager or staff clicks Update and edits the pre-populated form, Then the application saves the updated record and returns the staff user to the main puppy directory. 
+
+Functional Requirement #4
+
+As a Staff User, I need to delete a puppy record, In order to remove a puppy after it has been adopted. Given a staff member or store manager clicks Delete for an existing puppy entry in the list, When the browser displays a deletion confirmation and the staff or shop manager confirms the action, Then the application removes the selected puppy from the database and reloads the active puppy directory.
 
 Technology Stack 
 
