@@ -12,7 +12,9 @@ Target Users and Needs
 
 Pet shop staff members and store managers need to be able to view available puppies, add new puppy records, update puppy information, delete puppy records, and access organized puppy information stored in the same database.
 
-Planned Application Features Functional Requirement #1 As a Staff User, I need to access the puppy directory, In order to view all the current puppy records stored in the PPA database. Given a staff user wants to review the Pet Planet Adoption puppy directory, When the staff or store manager opens /Puppies/list URL endpoint, Then the application retrieves puppy records and displays them in a table sorted by name.
+Planned Application Features 
+
+Functional Requirement #1 As a Staff User, I need to access the puppy directory, In order to view all the current puppy records stored in the PPA database. Given a staff user wants to review the Pet Planet Adoption puppy directory, When the staff or store manager opens /Puppies/list URL endpoint, Then the application retrieves puppy records and displays them in a table sorted by name.
 
 Functional Requirement #2 As a Staff User, I need to create a new puppy entry, In order to log a newly arrived puppy into the local MySQL database. Given a staff user wants to add a puppy to the system, When the staff or store manager opens the Add New Puppy form, inputs the puppy name, color, breed and gender, and selects Register, Then the application saves the record and redirects the user back to the list of puppies. 
 
@@ -27,9 +29,11 @@ Technology Stack
 Team Roles and Responsibilities 
 
 Product Owner / Frontend Developer: Taylor Stargell – Defines project requirements and builds Thymeleaf and Bootstrap pages. 
-Visual Designer / GitHub Repository Manager: Emily Cinnamon – Owns the shared GitHub repository. 
-Scrum Master / UI: Jaylen Green – Manages project progress and designs wireframes and the user interface. 
-Database Developer / Backend: Holden Kravitz – Develops backend functionality and verifies CRUD persistence. Maintains the MySQL database.
 
+Visual Designer / GitHub Repository Manager: Emily Cinnamon – Owns the shared GitHub repository. 
+
+Scrum Master / UI: Jaylen Green – Manages project progress and designs wireframes and the user interface. 
+
+Database Developer / Backend: Holden Kravitz – Develops backend functionality and verifies CRUD persistence. Maintains the MySQL database.
 
 <img width="1143" height="246" alt="image" src="https://github.com/user-attachments/assets/0d9e6d22-7c86-4af6-86f2-07f6db847322" />
