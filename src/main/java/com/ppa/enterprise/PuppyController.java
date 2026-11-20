@@ -58,16 +58,17 @@
 //
 //}
 
+
 package com.ppa.enterprise;
 
 import com.ppa.enterprise.model.Puppy;
-import jakarta.annotation.PostConstruct;
+import com.ppa.enterprise.service.PuppyService;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -75,30 +76,18 @@ import java.util.List;
 @RequestMapping("/Puppies")
 public class PuppyController {
 
-    private List<Puppy> thePuppies;
+    private final PuppyService puppyService;
 
-    @PostConstruct
-    private void loadData() {
+    public PuppyController(PuppyService puppyService) {
 
-        thePuppies = new ArrayList<>();
-
-        thePuppies.add(new Puppy(
-                1, "Petey", "Black", "Yorkie-Poo", "Male"
-        ));
-
-        thePuppies.add(new Puppy(
-                2, "Biggie", "Apricot", "Toy Poodle", "Male"
-        ));
-
-        thePuppies.add(new Puppy(
-                3, "Chili", "Red", "Pomeranian", "Female"
-        ));
+        this.puppyService = puppyService;
     }
 
     @GetMapping("/list")
     public String listPuppies(Model theModel) {
 
-        List<Puppy> sortedPuppies = thePuppies.stream()
+        List<Puppy> sortedPuppies = puppyService.findAll()
+                .stream()
                 .sorted(Comparator.comparing(
                         Puppy::getName,
                         String.CASE_INSENSITIVE_ORDER
