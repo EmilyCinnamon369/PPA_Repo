@@ -21,10 +21,10 @@ public class Puppy {
 
     public Puppy(int id, String name, String color, String breed, String gender) {
         this.id = id;
-        this.name = name;
-        this.color = color;
-        this.breed = breed;
-        this.gender = gender;
+        setName(name);
+        setColor(color);
+        setBreed(breed);
+        setGender(gender);
     }
 
     public int getId() {
@@ -40,31 +40,19 @@ public class Puppy {
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getColor() {
-        return color;
+        this.name = name != null ? name.trim() : null;
     }
 
     public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getBreed() {
-        return breed;
+        this.color = color != null ? color.trim() : null;
     }
 
     public void setBreed(String breed) {
-        this.breed = breed;
-    }
-
-    public String getGender() {
-        return gender;
+        this.breed = breed != null ? breed.trim() : null;
     }
 
     public void setGender(String gender) {
-        this.gender = gender;
+        this.gender = gender != null ? gender.trim() : null;
     }
 
     @Override
