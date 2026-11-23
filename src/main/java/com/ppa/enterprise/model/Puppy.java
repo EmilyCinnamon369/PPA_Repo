@@ -10,14 +10,14 @@ public class Puppy {
 
     private String breed;
 
-    private String gender;
+    private Gender gender;
 
 
     public Puppy(){
 
     }
 
-    public Puppy(int id, String name, String color, String breed, String gender) {
+    public Puppy(int id, String name, String color, String breed, Gender gender) {
         this.id = id;
         this.name = name;
         this.color = color;
@@ -57,11 +57,11 @@ public class Puppy {
         this.breed = breed;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
@@ -72,7 +72,7 @@ public class Puppy {
                 ", name='" + name + '\'' +
                 ", color='" + color + '\'' +
                 ", breed='" + breed + '\'' +
-                ", gender='" + gender + '\'' +
+                ", gender=" + gender +
                 '}';
     }
 }
