@@ -32,6 +32,9 @@ public class Puppy {
     }
 
     public void setId(int id) {
+        if (id < 0) {
+            throw new IllegalArgumentException("Puppy id must not be negative: " + id);
+        }
         this.id = id;
     }
 
