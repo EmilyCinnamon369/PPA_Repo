@@ -27,11 +27,15 @@
 
     <tbody>
     <tr th:each="thePuppy : ${puppies}">
-        <td th:text="${thePuppy.name}"></td>
-        <td th:text="${thePuppy.color}"></td>
-        <td th:text="${thePuppy.breed}"></td>
-        <td th:text="${thePuppy.gender?.label}"></td>
+        <td th:text="${thePuppy.name} ?: 'Unknown'"></td>
+        <td th:text="${thePuppy.color} ?: 'Unknown'"></td>
+        <td th:text="${thePuppy.breed} ?: 'Unknown'"></td>
+        <td th:text="${thePuppy.gender?.label} ?: 'Unknown'"></td>
 
+    </tr>
+
+    <tr th:if="${#lists.isEmpty(puppies)}">
+        <td colspan="4">No puppies are currently listed.</td>
     </tr>
     </tbody>
 </table>
