@@ -1,6 +1,7 @@
 package com.ppa.enterprise;
 
 
+import com.ppa.enterprise.model.Gender;
 import com.ppa.enterprise.model.Puppy;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Controller;
@@ -22,9 +23,9 @@ public class PuppyController {
     private void loadData(){
 
         //Create Puppies
-        Puppy pup1 = new Puppy(1,"Petey", "Black", "Yorkie-Poo", "Male");
-        Puppy pup2 = new Puppy(2,"Biggie", "Apricot", "Toy Poodle", "Male");
-        Puppy pup3 = new Puppy(3,"Chili", "Red", "Pomeranian", "Female");
+        Puppy pup1 = new Puppy(1,"Petey", "Black", "Yorkie-Poo", Gender.MALE);
+        Puppy pup2 = new Puppy(2,"Biggie", "Apricot", "Toy Poodle", Gender.MALE);
+        Puppy pup3 = new Puppy(3,"Chili", "Red", "Pomeranian", Gender.FEMALE);
 
 
         //Create our List

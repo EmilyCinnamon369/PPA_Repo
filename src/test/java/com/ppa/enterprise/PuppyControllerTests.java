@@ -8,6 +8,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.not;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -39,5 +40,14 @@ class PuppyControllerTests {
                 .andExpect(content().string(containsString("Petey")))
                 .andExpect(content().string(containsString("Toy Poodle")))
                 .andExpect(content().string(containsString("Pomeranian")));
+    }
+
+    @Test
+    void listShowsReadableGenderLabelsInsteadOfEnumConstants() throws Exception {
+        mockMvc.perform(get("/Puppies/list"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString(">Male<")))
+                .andExpect(content().string(containsString(">Female<")))
+                .andExpect(content().string(not(containsString("FEMALE"))));
     }
 }
